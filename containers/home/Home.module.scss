@@ -1,0 +1,100 @@
+.icon {
+    margin-right: 10px;
+}
+
+.logout {
+    background-image: url('/pexels-harrison-candlin-2441454.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container {
+        .name {
+            p {
+                color: white;
+            }
+        }
+        .btnGroup {
+            text-align: center;
+            .login {
+                border: 1px solid #333;
+            }
+            
+            button.register {
+                background-color: #000;
+                color: honeydew;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .logout {
+        
+        .container {
+            display: grid;
+            grid-template-rows: 1fr auto;
+            height: 100vh;
+        }
+    
+        .name {
+            display: grid;
+            place-items: center;
+            height: 100%;
+    
+            p {
+                font-size: 3rem;
+            }
+        }
+    
+        .btnGroup {
+            bottom: 0px;
+            padding: 50px;
+            div {
+                button {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .logout {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+
+        .name {
+            p {
+                font-size: 4rem;
+            }
+        }
+
+        .btnGroup {
+            margin-top: 20px;
+            button {
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .logout {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+
+        .name {
+            p {
+                font-size: 4rem;
+            }
+        }
+
+        .btnGroup {
+            margin-top: 20px;
+            button {
+                margin: 10px;
+            }
+        }
+    }
+}
