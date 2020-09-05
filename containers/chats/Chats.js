@@ -5,7 +5,7 @@ import styles from './Chats.module.scss'
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
 const ChatContainer = () => {
-  const { data, error } = useSWR(`/api/chats?userId=}`, fetcher)
+  const { data, error } = useSWR(`/api/chats?userId=`, fetcher)
 
   if (error) return <div>failed to load</div>
   if (!data) {
