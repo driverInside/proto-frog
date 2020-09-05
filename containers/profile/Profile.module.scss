@@ -1,0 +1,123 @@
+.profile {
+    padding: 30px;
+    
+    .profileImage {
+        display: grid;
+        place-items: center;
+        text-align: center;
+
+        figure {
+            img {
+                width: 128px;
+                height: 128px;
+            }
+        }
+
+        .profileName {
+            margin-top: 2rem;
+            text-align: center;
+        }
+    }
+    .followButtons {
+        button {
+            display: block;
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        button.follow {
+            background-color: #000;
+            border: 1px solid #fff;
+            color: whitesmoke;
+        }
+    }
+    .gallery {
+        column-count: 3;
+        column-gap: 1em;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .profile {
+        padding: 30px;
+        
+        .profileImage {
+            display: grid;
+            place-items: center;
+            text-align: center;
+
+            figure {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+    
+            .profileName {
+                margin-top: 2rem;
+                text-align: center;
+            }
+        }
+        .followButtons {
+            button {
+                display: block;
+                width: 100%;
+                margin: 15px 0;
+            }
+    
+            button.follow {
+                background-color: #000;
+                border: 1px solid #fff;
+                color: whitesmoke;
+            }
+        }
+        .gallery {
+            column-count: 4;
+            column-gap: 1em;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .profile {
+        padding: 30px;
+        
+        .profileImage {
+            display: grid;
+            place-items: center;
+            text-align: center;
+
+            figure {
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+    
+            .profileName {
+                margin-top: 2rem;
+                text-align: center;
+            }
+        }
+        .followButtons {
+            text-align: center;
+            margin: 0 auto;
+            button {
+                margin: 15px;
+                display: inline;
+                width: 40%;
+            }
+    
+            button.follow {
+                background-color: #000;
+                border: 1px solid #fff;
+                color: whitesmoke;
+            }
+        }
+        .gallery {
+            column-count: 4;
+            column-gap: 1em;
+        }
+    }
+}
+

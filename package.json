@@ -8,13 +8,21 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.20.0",
     "bulma": "^0.9.0",
+    "faker": "^5.1.0",
     "next": "9.5.3",
     "node-sass": "^4.14.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-icons": "^3.11.0",
-    "react-video-cover": "^1.2.2"
+    "react-responsive-carousel": "^3.2.9",
+    "react-slick": "^0.27.10",
+    "react-video-cover": "^1.2.2",
+    "siema": "^1.5.1",
+    "slick-carousel": "^1.8.1",
+    "swr": "^0.3.2"
   },
   "devDependencies": {
     "standard": "^14.3.4"

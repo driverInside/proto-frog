@@ -1,0 +1,16 @@
+.result {
+    border: 1px solid #000;
+    text-align: center;
+    .resultImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .result {
+        border: 1px solid #000;
+        text-align: center;
+    }
+}

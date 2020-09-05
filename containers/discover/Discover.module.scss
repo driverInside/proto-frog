@@ -1,0 +1,37 @@
+.discover {
+    padding: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+
+@media (max-width: 575px) {
+    .discover {
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .discover {
+        h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .discover {
+        h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

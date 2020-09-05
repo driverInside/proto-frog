@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './Auth.module.scss'
 
 const AuthContainer = ({
@@ -29,7 +30,9 @@ const AuthContainer = ({
 
         <div className={styles.btnGroup}>
           <div className='are-large'>
-            <button className={`button ${styles.action}`}>{action}</button>
+            <Link href='/discover'>
+              <button className={`button ${styles.action}`}>{action}</button>
+            </Link>
           </div>
         </div>
       </div>

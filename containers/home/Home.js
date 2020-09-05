@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { BsFillLayersFill } from 'react-icons/bs'
 import styles from './Home.module.scss'
 
@@ -15,8 +16,12 @@ const HomeContainer = () => {
         </div>
         <div className={styles.btnGroup}>
           <div className='are-large'>
-            <button className={`button ${styles.login}`}>Log in</button>
-            <button className={`button ${styles.register}`}>Register</button>
+            <Link href={{ pathname: '/auth', query: { title: 'Log in', action: 'Enter' } }}>
+              <button className={`button ${styles.login}`}>Log in</button>
+            </Link>
+            <Link href={{ pathname: '/auth', query: { title: 'Register', action: 'Create account'} }}>
+              <button className={`button ${styles.register}`}>Register</button>
+            </Link>
           </div>
         </div>
       </div>
